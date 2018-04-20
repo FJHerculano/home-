@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.windows.home.praticar"
+    >
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/avengers"
+      android:isScrollContainer="true"
+      android:scaleType="centerCrop"/>
+
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:id="@+id/li_layout1"
+          android:layout_marginLeft="35dp"
+          android:layout_marginRight="35dp"
+          android:gravity="center">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:text="@string/orig_pra_trad"
+            android:id="@+id/ori_trad"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descrição1"
+            android:textSize="25dp"
+            android:id="@+id/texto_descricao1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descrição2"
+            android:textSize="20dp"
+            android:id="@+id/texto_baixo"
+            />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:id="@+id/li_layout2"
+          android:layout_toRightOf="@+id/li_layout1"
+          android:gravity="center"
+          android:layout_marginRight="35dp"
+          >
+
+        <Button
+            android:id="@+id/trad_ori"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="@string/trad_para_ori"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descrição"
+            android:id="@+id/texto_descricao2"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descrição1"
+            android:textSize="20sp"
+            android:id="@+id/texto_baixo2"
+            />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_toRightOf="@+id/li_layout2"
+          android:layout_marginRight="35dp"
+          android:gravity="center"
+          >
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="@string/misto"
+            android:textSize="20sp"
+            android:id="@+id/misto"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descrição"
+            android:id="@+id/texto_descricao3"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descrição1"
+            android:id="@+id/texto_baixo3"
+            android:textSize="20dp"
+            />
+
+      </LinearLayout>
+    </RelativeLayout>
+  </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>
